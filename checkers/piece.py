@@ -1,10 +1,11 @@
+import pygame;
 from .constants import RED, WHITE, SQUARE_SIZE, GREY;
 
 
 
 class Piece:
 
-    PADDING = 10
+    PADDING = 15
     OUTLINE = 2
 
     def __init__(self, row, col, color):
@@ -22,6 +23,7 @@ class Piece:
 
         self.x = 0
         self.y = 0
+        self.cal_position()
 
 
     def cal_position(self):
@@ -37,6 +39,6 @@ class Piece:
         pygame.draw.circle (win,GREY, (self.x, self.y),radius + self.OUTLINE);
         pygame.draw.circle (win, self.color, (self.x, self.y),radius);
 
-        
+
 
 
