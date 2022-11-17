@@ -13,8 +13,8 @@ pygame.display.set_caption('Checkers')
 #eventloop
 def main():
     run = True
-    clock = pygame.time.Clock() #base clock speed depending on computer. 
-    board = Board
+    clock = pygame.time.Clock(); #base clock speed depending on computer. 
+    board = Board();
 
     while run:
         clock.tick(FPS)
