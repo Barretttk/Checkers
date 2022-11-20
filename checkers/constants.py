@@ -14,4 +14,4 @@ GREY = (128, 128, 128 )
 
 #call image from assets
 #method from pygame to resize image
-CROWN = pygame.transform.scale(pygame.image.load('assets/crown.png'), (45, 25))
+CROWN = pygame.transform.scale(pygame.image.load('checkers/assets/crown.png'), (45, 25))
