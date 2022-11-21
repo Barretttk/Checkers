@@ -54,5 +54,9 @@ class Board:
                 if piece != 0:
                     piece.draw(win)
 
+    def get_valid_moves(self, piece)
+        moves = {}
+        
+
 
 
