@@ -13,14 +13,6 @@ class Piece:
         self.col = col
         self.color = color
         self.king = False
-
-        if self.color == RED:
-            self.direction = -1
-        
-        else:
-
-            self.direction = 1
-
         self.x = 0
         self.y = 0
         self.cal_position()
@@ -31,7 +23,7 @@ class Piece:
         self.y = SQUARE_SIZE * self.row + SQUARE_SIZE // 2;
 
 
-    def king(self):
+    def make_king(self):
         self.king = True
 
 
